@@ -1,0 +1,219 @@
+.entete{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    animation-duration: 3s;
+    animation-name: bonbon;
+    animation-iteration-count: 1;
+    
+}
+@keyframes bonbon {
+    from{ transform: scale(0); }
+    to{ transform: scale(1) ;}
+}
+a{
+    text-decoration: none;
+    margin: 15px;
+}
+.portfolio{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1cm;
+    margin-top: 2cm;
+    color: blue;
+    font-family: cursive;
+}
+div{
+    font-size: 30px;
+    margin-left: 1cm;
+}
+#propos > div{
+    width: 50%;
+}
+#propos{
+    display: flex;
+    height: 11cm;
+    
+}
+body{
+    animation-duration: 1s;
+    animation-name: affiche;
+    animation-iteration-count: 1;
+}
+@keyframes affiche {
+    from{ 
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.infos{
+    background: linear-gradient(45deg, rgb(160, 160, 207),rgb(184, 184, 101));
+    border-radius: 50px;
+    text-align: center;
+    vertical-align: auto;
+    line-height: 70px;
+    animation-duration: 3s;
+    animation-name: bonbon;
+    animation-iteration-count: 1;
+    
+}
+.photo{
+    border-radius: 100%;
+    margin-left: 1cm;
+    animation-duration: 1s;
+    animation-name: maphoto;
+    animation-iteration-count: 3;
+    height: 10cm;
+}
+@keyframes maphoto {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+h2{
+    text-align: center;
+    margin-left: 1cm;
+    color: rgb(150, 66, 66)
+}
+footer{
+    background-color: rgb(38, 34, 51);
+    color: white;
+    text-align: center;
+    height: 6cm;
+    font-size: 25px;
+    
+
+}
+.php,.css{
+    background-color: rgb(73, 73, 211);
+    color: white;
+    width: 9rem;
+    height: 6rem;
+    font: size 50 rem;
+    border-radius: 25%;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 12px;
+}
+.laravel{
+    margin-top: 12px;
+    color: red;
+    width: 9rem;
+    height: 6rem;
+    font: size 50 rem;
+    border-radius: 25%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 2px -2px  black, -2px 2px black;
+}
+.html{
+    background-color: rgba(236, 65, 13, 0.897);
+    color:black;
+    width: 9rem;
+    height: 6rem;
+    font: size 50 rem;
+    border-radius: 25%;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 12px;
+}
+.javascript{
+    background-color: yellow;
+    color:black;
+    width: 9rem;
+    height: 6rem;
+    font: size 70 rem;
+    border-radius: 25%;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 12px;
+}
+.move:hover{
+    box-shadow: 2px 2px 2px 5px blueviolet;
+}
+.back{
+    display: flex;
+}
+.tech{
+    position: relative;
+    left: 30%;
+}
+h3{
+    margin-left: 4cm;
+    color: blue;
+}
+.front{
+    display: flex;
+    position: relative;
+    margin-left: 27%;
+    margin-bottom: 2cm;
+}
+.service{
+    color: white;
+    background-color: rgb(211, 28, 171);
+    position: relative;
+    left: 45%;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    padding: 10px;
+}
+.envel{
+    width: 2rem;
+}
+.afficher,.cacher{
+    display: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (max-width:700px) {
+    div{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .front{
+        display: block;
+    }
+    .javascript,.php,.html,.css,.laravel{
+        font-size: 30px;
+    }
+    h3{
+        margin-left: 1cm;
+    }
+    .back{
+        display: block;
+    }
+    .infos{
+        line-height: 25px;
+        border-radius: 20px;
+    }
+    .portfolio{
+        font-size: 30px;
+        margin-top: 1cm;
+    }
+    a{
+        margin: 5px;
+        display: block;
+    }
+    .entete{
+        display: none;
+        position: absolute;
+    }
+    .move:hover{
+        box-shadow: 2px 2px 2px 5px blueviolet;
+    }
+    .afficher{
+        display: block;
+        width: 1cm;
+    }
+    .cacher{
+        display: none;
+        width: 1cm;
+    }
+}
